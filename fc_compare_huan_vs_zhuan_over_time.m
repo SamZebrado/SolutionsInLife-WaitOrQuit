@@ -24,4 +24,6 @@ plot(c_zhuanzu,'rx-')
 ylabel('成本（元）')
 xlabel('发起日期（第dd天）')
 legend('换租','转租','Location','northwest')
+mean_diff = (mean(c_zhuanzu-c_huanzu));
+title (sprintf('换租 - 转租 的平均值为%.3f',mean_diff))
 end
